@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Scheduler</title>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+
+    <!-- bootstrap links -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+    <!--bootsrap ended  -->
+    
+    
+    <style type="text/css">
+		    
+        html,body{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            /* #1A1A1D */
+            font-family: 'Sofia';
+        }
+
+        .title{
+            text-align: center;
+            background: #111111;
+            color: yellow;
+            font-family: 'Piazzolla';
+            letter-spacing: 0.1em;
+            font-size: 4em;
+            padding: 5px;
+        }
+
+        .tagline{
+            text-align: center;
+            color: rgb(44, 112, 238);
+            font-family: 'Piazzolla';
+            letter-spacing: 0.1em;
+            font-size: 2.5em;
+            padding: 5px;
+            margin-bottom: 2%;
+            margin-top: 2%;
+
+        }
+
+        .text{
+        	font-family: 'Piazzolla';
+        	color: orange;
+        	font-size: 1.2em;
+        	margin-left: 42vw;
+        }
+
+        .buttonsIn{
+            margin-top: 3%;
+            border-radius: 3px;
+            font-family: 'Piazzolla';
+            letter-spacing: 0.3em;
+            font-size: 1.6em;
+            width: 7vw;
+        }
+
+        .regb{
+			margin-left: 1vw;
+        }
+
+        #foot{
+            margin-top:40vh;
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            letter-spacing: 4px;
+            font-family: 'Piazzolla';
+            font-weight: 1.8rem;
+        }
+
+        #heart{
+            color: red;
+        }
+
+        #nameLink{
+            text-decoration: none;
+            color: orange;
+        }
+
+	</style>
+</head>
+<body>
+	<a onclick="#"><h1 class="title">Welcome to WCE Event Scheduler</h1></a>
+    <div class="tagline"> Web Application To Manage Events</div>
+	<div>
+		<span style="font-size: 2.5rem; " class="text">New User</span>
+		<span><button class="buttonsIn regb bt btn-success" onclick="register();">Register</button></span>
+	</div>
+	<div>
+	<span style="font-size: 2.5rem; "class="text ">Existing user</span>	
+	<span><button class="buttonsIn logb bt btn-success" onclick="login();">Login</button></span>	
+	</div>
+	<footer>
+		<p id="foot"><a id="nameLink" href="http://www.walchandsangli.ac.in">Walchand College Of Engineering Sangli</a></p>
+	</footer>
+<script>
+
+	function register(){
+		window.location = "register.php";
+	}
+
+	function login(){
+		window.location = "login.php";
+	}
+
+</script>	
+</body>
+</html>
